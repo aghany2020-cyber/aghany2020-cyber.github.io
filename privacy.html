@@ -47,16 +47,17 @@
     <li>to avoid uploading the same video twice (the tool keeps the YouTube ID of each video it uploaded);</li>
     <li>to show the owner their own view and subscriber counts on a local dashboard and in local weekly reports.</li>
   </ul>
-  <p>The data is not sold, not used for advertising, not combined with other datasets, and not used to train or improve
-  any artificial-intelligence or machine-learning model. Statistics are shown as returned by YouTube; the tool does not
-  present its own calculated figures as YouTube data.</p>
+  <p>The data is not sold, not used for advertising, and not combined with other datasets. Cookies Studio itself does not use
+  it to train or improve any artificial-intelligence or machine-learning model. Statistics are stored as returned by YouTube;
+  summary figures such as changes between two readings are calculated locally from them and are not presented as figures
+  provided by YouTube.</p>
 </section>
 
 <section>
   <h2>5. Where the data is stored and how it is protected</h2>
   <ul>
-    <li>All data is stored <strong>only on the owner’s computer</strong>: the OAuth token in a local file, the statistics and
-    upload records in a local database. There is no Cookies Studio server, and nothing is uploaded to any cloud storage by the tool.</li>
+    <li>All data is stored <strong>only on the owner’s computer</strong>: the OAuth token and the channel’s ID and title in local
+    files, the statistics and upload records in a local database. There is no Cookies Studio server, and nothing is uploaded to any cloud storage by the tool.</li>
     <li>Communication with Google uses HTTPS (industry-standard transport encryption).</li>
     <li>The local dashboard listens only on 127.0.0.1 and is not reachable from other devices.</li>
     <li>The tool sets no cookies and includes no analytics or advertising code. This website itself sets no cookies.</li>
@@ -65,22 +66,24 @@
 
 <section>
   <h2>6. Sharing</h2>
-  <p>Google user data is not shared with any third party. One disclosure for completeness: the owner sometimes asks an AI
-  assistant (Anthropic’s Claude, used on the owner’s own computer under the owner’s account) to help operate the tool and review
-  reports; when the owner does so, the assistant may read the same local reports the owner sees (for example the channel’s view
-  and subscriber counts). This happens only at the owner’s request, for the owner’s own channel management.</p>
+  <p>Cookies Studio does not sell or share Google user data with any third party and has no server of its own. One disclosure
+  for completeness: the owner sometimes asks an AI assistant (Anthropic’s Claude, used under the owner’s own account) to help
+  operate the tool and review its local reports; when the owner does so, the assistant may read those reports, which include the
+  channel’s own view and subscriber counts. This happens only at the owner’s request, for the owner’s own channel management, and
+  that assistant’s handling of conversations is governed by its provider’s terms and the owner’s account settings. The tool’s
+  automatic script-writing feature does not send YouTube API data to the assistant.</p>
 </section>
 
 <section>
   <h2>7. Retention and deletion</h2>
   <ul>
     <li>The OAuth token is kept only as long as the owner keeps the tool connected, and is used only for the purposes above.</li>
-    <li>Statistics and upload records are kept while the owner’s authorization remains valid. Every successful authorized call
-    re-confirms the authorization; if authorization has not been re-confirmed for <strong>30 days</strong> (for example because
-    access was revoked), the tool automatically deletes all stored YouTube API data.</li>
+    <li>Statistics and the YouTube IDs of uploaded videos are kept while the owner’s authorization remains valid. Every successful
+    authorized call re-confirms the authorization; if authorization has not been re-confirmed for <strong>30 days</strong> (for
+    example because access was revoked), the tool’s daily routine deletes the stored statistics and YouTube video IDs.</li>
     <li>The owner can delete everything at any time with the tool’s “disconnect” command, which revokes the token at Google and
-    deletes the token and all stored YouTube API data immediately. Any deletion request sent to the contact address below is
-    completed within <strong>7 days</strong>.</li>
+    immediately deletes the local token, the stored channel information, the statistics and the YouTube video IDs. Any deletion
+    request sent to the contact address below is completed within <strong>7 days</strong>.</li>
   </ul>
 </section>
 
@@ -107,8 +110,8 @@
   <p>تستخدم أداة Cookies Studio خدمات YouTube API، وباستخدامها توافق على <a href="https://www.youtube.com/t/terms">شروط خدمة YouTube</a>،
   وتنطبق <a href="http://www.google.com/policies/privacy">سياسة خصوصية Google</a>. الأداة تطلب صلاحيتين فقط: رفع الفيديوهات
   وقراءة بيانات قناة صاحبها. كل البيانات (التوكن والإحصائيات وسجل الرفع) محفوظة على كمبيوتر صاحب القناة فقط، ولا تُباع
-  ولا تُشارك ولا تُستخدم في تدريب الذكاء الاصطناعي. تُحذف بيانات YouTube تلقائيًا إذا لم تُجدَّد الصلاحية خلال 30 يومًا،
-  ويمكن حذفها فورًا بأمر الفصل، وأي طلب حذف يُنفّذ خلال 7 أيام. يمكنك سحب الصلاحية من
+  ولا تُشارك، والأداة نفسها لا تستخدمها في تدريب الذكاء الاصطناعي. تُحذف الإحصائيات ومعرّفات فيديوهات YouTube تلقائيًا إذا لم تُجدَّد الصلاحية خلال 30 يومًا،
+  ويمكن حذفها مع التوكن ومعلومات القناة فورًا بأمر الفصل، وأي طلب حذف يُنفّذ خلال 7 أيام. يمكنك سحب الصلاحية من
   <a href="https://security.google.com/settings/security/permissions">إعدادات أمان Google</a>. للتواصل:
   <a href="mailto:cookies.studio.contact@gmail.com">cookies.studio.contact@gmail.com</a>.</p>
 </section>
